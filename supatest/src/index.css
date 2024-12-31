@@ -66,7 +66,108 @@ button:focus-visible {
   }
 }
 
-nav{
-  justify-content:space-between;
- row-gap: 20px;
+
+.card {
+  height: 220px;
+  width: 140px;
+  border-radius: 12px;
+  color: black;
+  border: 2px black solid;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: space-between; /* Adjusts the space between the cards */
+}
+
+
+/* Medium screens (e.g., tablets, small desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    flex: 0 0 calc(33.333% - 10px); /* 3 cards per row (100% ÷ 3 ≈ 33.333%) */
+  }
+}
+
+/* Mobile screens (e.g., phones) */
+@media (max-width: 767px) {
+  .container {
+    justify-content: center; /* Center the cards */
+  }
+
+  .card {
+    flex: 0 0 calc(100% - 10px); /* 1 card per row (100% ÷ 1 = 100%) */
+  }
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute the links across the container */
+}
+
+
+.form {
+  max-width: 500px; /* Limiting the width for a neat look */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add some space inside the form */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Space between the input elements */
+}
+
+label {
+  font-size: 1.1em; /* Larger font size for labels */
+  margin-bottom: 5px; /* Space below the label */
+  font-weight: bold; /* Make labels bold */
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for inputs and textarea */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em;
+  outline: none; /* Remove the default outline */
+  transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+textarea {
+  resize: vertical; /* Allow resizing only vertically */
+  height: 120px; /* Fixed height for textarea */
+}
+
+button {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  padding: 12px 20px; /* Adequate padding */
+  font-size: 1.2em; /* Larger font size */
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:active {
+  background-color: #004085; /* Even darker blue when the button is clicked */
 }
