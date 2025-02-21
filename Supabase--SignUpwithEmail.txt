@@ -1,0 +1,44 @@
+{
+    "user": {
+        "id": "a5180808-c0dd-4b1d-b66c-5df23b27faa2",
+        "aud": "authenticated",
+        "role": "authenticated",
+        "email": "namesrohan@gmail.com",
+        "phone": "",
+        "confirmation_sent_at": "2025-01-09T05:16:36.535261245Z",
+        "app_metadata": {
+            "provider": "email",
+            "providers": [
+                "email"
+            ]
+        },
+        "user_metadata": {
+            "email": "namesrohan@gmail.com",
+            "email_verified": false,
+            "phone_verified": false,
+            "sub": "a5180808-c0dd-4b1d-b66c-5df23b27faa2"
+        },
+        "identities": [
+            {
+                "identity_id": "c29a4249-72a9-4bdf-b2bd-4910301b3c50",
+                "id": "a5180808-c0dd-4b1d-b66c-5df23b27faa2",
+                "user_id": "a5180808-c0dd-4b1d-b66c-5df23b27faa2",
+                "identity_data": {
+                    "email": "namesrohan@gmail.com",
+                    "email_verified": false,
+                    "phone_verified": false,
+                    "sub": "a5180808-c0dd-4b1d-b66c-5df23b27faa2"
+                },
+                "provider": "email",
+                "last_sign_in_at": "2025-01-09T05:16:36.531291133Z",
+                "created_at": "2025-01-09T05:16:36.531343Z",
+                "updated_at": "2025-01-09T05:16:36.531343Z",
+                "email": "namesrohan@gmail.com"
+            }
+        ],
+        "created_at": "2025-01-09T05:16:36.52612Z",
+        "updated_at": "2025-01-09T05:16:39.791489Z",
+        "is_anonymous": false
+    },
+    "session": null
+}
